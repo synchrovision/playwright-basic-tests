@@ -3,7 +3,7 @@ import {test,expect} from '@playwright/test';
 
 const getUrlSetNames=()=>{
 	const names=[];
-	fs.readdirSync('urlset').forEach(fname=>names.push(fname.slice(0,-4)));
+	fs.readdirSync('urlset').forEach(fname=>fname.slice(-4)==='.txt' && names.push(fname.slice(0,-4)));
 	return names;
 }
 const serUrls=(name,urls)=>{
