@@ -1,7 +1,10 @@
 import fs from 'fs';
 
 (()=>{
-	if(!fs.existsSync('urls.txt')){
-		fs.writeFileSync('urls.txt','https://example.com/',{encoding:'utf8'});
+	if(!fs.existsSync('urlset')){
+		fs.mkdirSync('urlset');
+	}
+	if(!fs.existsSync('urlset/default.txt')){
+		fs.writeFileSync('urlset/default.txt','https://example.com/',{encoding:'utf8'});
 	}
 })();
