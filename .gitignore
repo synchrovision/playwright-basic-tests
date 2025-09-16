@@ -5,4 +5,6 @@ node_modules/
 /playwright/.cache/
 /data/
 /screenshot/
+/resourceList/
 /urlset/
+/credentials.json
