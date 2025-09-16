@@ -1,6 +1,4 @@
-
-Playwright Basic Tests
-==
+# Playwright Basic Tests
 
 ![Playwright](https://img.shields.io/badge/playwright-1.45-green)
 
@@ -8,8 +6,7 @@ Basic tests scripts with Playwright.
 Crawl and list up url in the site.
 Check each listed url to capture screenshot, find broken link.
 
-Setup
---
+## Setup
 
 Clone this repository.
 
@@ -23,9 +20,9 @@ Exec init process.
 npm run init
 ```
 
-Edit urls.txt and put entry url to it.
+Rename and edit urlset/default.txt and put entry url to it.
 
-```txt:urls.txt
+```txt:urlset/your.site.txt
 https://example.com
 ↓
 https://your.site
@@ -37,12 +34,26 @@ Start UI.
 npm run start
 ```
 
-Do init>crawl.   
-Then crawled urls are listed in urls.txt.
+Then PlayWright will starts.  
+Open `scripts.spec.js > clawl` at sidebar, and you'll find the name of file that you created in urlset directory.  
+Click the run icon at the side of the name.
 
+Then crawled urls are listed in the file you created.
 
-Usage
---
+```txt:urlset/your.site.txt
+https://your.site
+↓
+https://your.site
+https://your.site/page/
+https://your.site/page/linked/
+https://your.site/page/linked/from/
+https://your.site/page/linked/from/top/
+...
+```
+
+Now you ready to do tests.
+
+## Usage
 
 Start UI, and do any test you like.
 
