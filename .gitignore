@@ -6,5 +6,7 @@ node_modules/
 /data/
 /screenshot/
 /resourceList/
+/metadata/
+/brokenLinks/
 /urlset/
 /credentials.json
